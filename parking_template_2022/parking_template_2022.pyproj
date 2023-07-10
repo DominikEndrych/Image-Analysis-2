@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{bc89fa41-f00c-4902-b128-040ebf4c7aed}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>CNNParkoviste.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="parking_map_python.txt" />
+    <Content Include="README.txt" />
+    <Content Include="requirements.txt" />
+    <Content Include="test_images\test1.jpg" />
+    <Content Include="test_images\test1.txt" />
+    <Content Include="test_images\test10.jpg" />
+    <Content Include="test_images\test10.txt" />
+    <Content Include="test_images\test11.jpg" />
+    <Content Include="test_images\test11.txt" />
+    <Content Include="test_images\test12.jpg" />
+    <Content Include="test_images\test12.txt" />
+    <Content Include="test_images\test13.jpg" />
+    <Content Include="test_images\test13.txt" />
+    <Content Include="test_images\test14.jpg" />
+    <Content Include="test_images\test14.txt" />
+    <Content Include="test_images\test15.jpg" />
+    <Content Include="test_images\test15.txt" />
+    <Content Include="test_images\test16.jpg" />
+    <Content Include="test_images\test16.txt" />
+    <Content Include="test_images\test17.jpg" />
+    <Content Include="test_images\test17.txt" />
+    <Content Include="test_images\test18.jpg" />
+    <Content Include="test_images\test18.txt" />
+    <Content Include="test_images\test19.jpg" />
+    <Content Include="test_images\test19.txt" />
+    <Content Include="test_images\test2.jpg" />
+    <Content Include="test_images\test2.txt" />
+    <Content Include="test_images\test20.jpg" />
+    <Content Include="test_images\test20.txt" />
+    <Content Include="test_images\test21.jpg" />
+    <Content Include="test_images\test21.txt" />
+    <Content Include="test_images\test22.jpg" />
+    <Content Include="test_images\test22.txt" />
+    <Content Include="test_images\test23.jpg" />
+    <Content Include="test_images\test23.txt" />
+    <Content Include="test_images\test24.jpg" />
+    <Content Include="test_images\test24.txt" />
+    <Content Include="test_images\test3.jpg" />
+    <Content Include="test_images\test3.txt" />
+    <Content Include="test_images\test4.jpg" />
+    <Content Include="test_images\test4.txt" />
+    <Content Include="test_images\test5.jpg" />
+    <Content Include="test_images\test5.txt" />
+    <Content Include="test_images\test6.jpg" />
+    <Content Include="test_images\test6.txt" />
+    <Content Include="test_images\test7.jpg" />
+    <Content Include="test_images\test7.txt" />
+    <Content Include="test_images\test8.jpg" />
+    <Content Include="test_images\test8.txt" />
+    <Content Include="test_images\test9.jpg" />
+    <Content Include="test_images\test9.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10_11.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNN.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNNParkoviste.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNNParkovisteSSD.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNNPrakovisteYOLO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNNTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatasetParking.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py" />
+    <Compile Include="faceDetect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileNet_transfer_learning.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pytorch_ukazky.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResNet_transfer_learning.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test_images" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Description>env (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <Version>3.9</Version>
+      <Architecture>X64</Architecture>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
